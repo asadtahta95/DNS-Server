@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
-# DNS_SpeedTest
+# DNS-Server
 A bash script that tests ping time for common DNS servers
 
 Download, and run ./dnsspeedtest.sh. If you are on Windows 10, the Bash for Windows should work as well.
