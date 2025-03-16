@@ -12,6 +12,10 @@ IDNIC   Primary: 103.88.88.88
 IDNIC   Secondary: 103.88.88.99
 AsadDNS  Primary: 103.150.93.38
 AsadDNS  Secondary: 103.160.37.106
+Telkom    Primary: 202.134.1.10
+Telkom    Secondary: 125.160.4.82 
+Biznet    Primary: 203.142.82.222
+Biznet    Secondary: 203.142.84.222
 Level3		Primary  : 209.244.0.3	   
 Level3		Secondary: 209.244.0.4	   
 Verisign	Primary  : 64.6.64.6	   
