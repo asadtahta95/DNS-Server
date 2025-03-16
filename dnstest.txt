@@ -1,22 +1,30 @@
 Google		Primary  : 8.8.8.8	   
-Google		Secondary: 8.8.4.4	   
-OpenDNS		Primary  : 208.67.222.222  
-OpenDNS		Secondary: 208.67.220.220  
-Clodflare	Primary  : 1.1.1.1	   
-Clodflare	Secondary: 1.0.0.1	   
+Google		Secondary: 8.8.4.4	    
+Cloudflare	Primary  : 1.1.1.1	   
+Cloudflare	Secondary: 1.0.0.1
+Quad9		Primary  : 9.9.9.9
+Quad9		Secondary: 149.112.112.112
+APJII   Primary: 203.119.13.77
+APJII   Secondary: 203.119.13.78
+Nawala  Primary: 180.131.144.144
+Nawala  Secondary: 180.131.145.145
+IDNIC   Primary: 103.88.88.88
+IDNIC   Secondary: 103.88.88.99
+AsadDNS  Primary: 103.150.93.38
+AsadDNS  Secondary: 103.160.37.106
 Level3		Primary  : 209.244.0.3	   
 Level3		Secondary: 209.244.0.4	   
 Verisign	Primary  : 64.6.64.6	   
 Verisign	Secondary: 64.6.65.6	   
 OpenNIC		Primary  : 192.95.54.3     
 OpenNIC		Secondary: 192.95.54.1     
-Quad9		Primary  : 9.9.9.9
-Quad9		Secondary: 149.112.112.112
 VerizonDNS	Primary  : 4.2.2.1
 VerizonDNS	Secondary: 4.2.2.2
 VerizonDNS	Secondary: 4.2.2.3
 VerizonDNS	Secondary: 4.2.2.4
 VerizonDNS	Secondary: 4.2.2.5
+OpenDNS		Primary  : 208.67.222.222  
+OpenDNS		Secondary: 208.67.220.220 
 DNS.WATCH4	Primary  : 84.200.69.80	   
 DNS.WATCH4	Secondary: 84.200.70.40    
 Comodo		Primary  : 8.26.56.26      
