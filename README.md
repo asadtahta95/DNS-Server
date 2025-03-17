@@ -20,7 +20,7 @@ A simple Bash script to check the response time of various DNS servers using pin
 
 Clone the repository and navigate into the directory:
 
-git clone https://github.com/yourusername/dns-checker.git
+git clone https://github.com/asadtahta95/DNS-Server.git
 cd dns-checker
 chmod +x dns-checker.sh
 
