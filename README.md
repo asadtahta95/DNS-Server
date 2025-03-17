@@ -1,21 +1,89 @@
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+DNS Checker Script
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+A simple Bash script to check the response time of various DNS servers using ping. It reads a list of DNS providers from a file and calculates the average response time over 3 ping attempts.
+🚀 Features
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
-# DNS-Server
-A bash script that tests ping time for common DNS servers
+    Supports multiple DNS providers from a text file.
+    Displays results in a formatted table with provider name, type (Primary/Secondary), IP address, and average response time.
+    Uses color coding:
+        ✅ Green for successful responses.
+        ❌ Red for timeouts.
+    Debug mode to help troubleshoot any issues.
 
-Download, and run ./dns-checker.sh. If you are on Windows 10, the Bash for Windows should work as well.
+📜 Requirements
 
-Feel free to add any dns servers you come across, I just looked up a few of the more common ones. The only ting I ask is to maintain the same format in the dnstest.txt file for clean output when the program is run.
+    Bash (bash shell)
+    ping command
+    tput (for colored output)
 
-Thanks!
+🔧 Installation
+
+Clone the repository and navigate into the directory:
+
+git clone https://github.com/yourusername/dns-checker.git
+cd dns-checker
+chmod +x dns-checker.sh
+
+📄 File Structure
+
+.
+├── dns-checker.sh   # The main script
+└── dnstest.txt      # List of DNS servers to test
+
+📝 Configuring the DNS List
+
+Modify dnstest.txt to include your own DNS servers. Use the following format:
+
+Provider : Type : IP Address
+Google : Primary : 8.8.8.8
+Google : Secondary : 8.8.4.4
+Cloudflare : Primary : 1.1.1.1
+Cloudflare : Secondary : 1.0.0.1
+Quad9 : Primary : 9.9.9.9
+Quad9 : Secondary : 149.112.112.112
+
+▶️ Running the Script
+
+Execute the script using:
+
+./dns-checker.sh
+
+or
+
+bash dns-checker.sh
+
+🖥️ Example Output
+
+Provider             Type         IP Address       AVG TIME
+---------------------------------------------------------------
+Google               Primary      8.8.8.8         12.34 ms
+Google               Secondary    8.8.4.4         15.67 ms
+Cloudflare           Primary      1.1.1.1         8.90 ms
+Cloudflare           Secondary    1.0.0.1         TIMEOUT
+Quad9                Primary      9.9.9.9         20.11 ms
+Quad9                Secondary    149.112.112.112 18.22 ms
+
+🛠️ Troubleshooting
+No Output or Incorrect Formatting?
+
+    Ensure dnstest.txt is formatted correctly.
+    Run this command to check for hidden spaces or incorrect characters:
+
+cat -A dnstest.txt
+
+Remove trailing spaces:
+
+    sed -i 's/[[:space:]]*$//' dnstest.txt
+
+Getting "Permission Denied"?
+
+    Run:
+
+    chmod +x dns-checker.sh
+
+📜 License
+
+This project is licensed under the MIT License.
+❤️ Contributions
+
+Feel free to fork this repository, submit pull requests, or report issues!
